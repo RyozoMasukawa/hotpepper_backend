@@ -11,7 +11,9 @@ from janome.analyzer import Analyzer
 from janome import tokenfilter, charfilter
 import re, regex
 
-HOTPEPPER_API_KEY = 'YOUR HOTPEPPER API KEY HERE'
+from decouple import config
+
+HOTPEPPER_API_KEY = config("HOTPEPPER_API_KEY")
 GET_restaurant_NUM = 100
 
 USE_SEARCH_FIELD_LIST = ['address','keyword', 'free_drink', 'free_food', 'private_room',

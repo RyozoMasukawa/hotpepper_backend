@@ -2,8 +2,11 @@ import openai
 from django.forms.models import model_to_dict
 from .reviews import review_responce
 
+from decouple import config
+
+
 # Create your views here.
-openai.api_key='YOUR OPENAI API KEY HERE'
+openai.api_key=config("OPENAI_API_KEY")
 
 #chatGPTに聞く関数
 def ask_chatGPT(restaurant):
