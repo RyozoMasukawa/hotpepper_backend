@@ -1,1 +1,1 @@
-web: gunicorn restaurant_chatgpt.wsgi --log-file -
+web: python manage.py migrate && python manage.py collectstatic && gunicorn restaurant_chatgpt.wsgi

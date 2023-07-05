@@ -30,6 +30,7 @@ DEBUG = config("DEBUG")
 
 ALLOWED_HOSTS = [
     'wsl-chatgpt-hotpepper-b4976eff3936.herokuapp.com',
+    '127.0.0.1',
 ]
 
 
