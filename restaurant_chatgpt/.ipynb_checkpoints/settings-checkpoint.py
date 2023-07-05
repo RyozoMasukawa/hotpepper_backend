@@ -95,6 +95,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3001",
     "http://127.0.0.1:9000",
     "http://127.0.0.1:3001",
+    "https://hotpper-chatgpt-app.firebaseapp.com",
+    "https://hotpper-chatgpt-app.web.app",
 ]
 
 # Database
