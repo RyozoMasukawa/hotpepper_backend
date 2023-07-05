@@ -1,0 +1,14 @@
+-r requirement_dev.txt
+Django==4.2
+altair
+pandas
+streamlit
+openai
+django-cors-headers
+ipython
+Janome
+regex
+lxml
+beautifulsoup4
+gunicorn
+psycopg2

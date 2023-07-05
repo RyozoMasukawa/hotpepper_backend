@@ -1,0 +1,1 @@
+web: gunicorn restaurant_chatgpt.wsgi --log-file -
