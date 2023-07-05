@@ -10,6 +10,7 @@ openai.api_key=config("OPENAI_API_KEY")
 
 #chatGPTに聞く関数
 def ask_chatGPT(restaurant):
+    print(config("OPENAI_API_KEY"))
     prompt = make_prompt(restaurant)
     print(str(model_to_dict(restaurant)["hotpepper_id"])!="None")
     ans=""
