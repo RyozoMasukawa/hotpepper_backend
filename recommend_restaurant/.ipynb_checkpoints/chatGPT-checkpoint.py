@@ -63,7 +63,7 @@ def make_prompt(restaurant):
                 #             d[k] = v
                 #     value = d
                 prompt += f"{key} : {value}\n"
-
+    print(prompt)
     return prompt
 
 #chatGPTからプロンプト(user_query)対する答えを得る関数
@@ -81,4 +81,5 @@ def ChatGPT(user_query, model_engine="text-davinci-003"):
           temperature = 0.5,
     )
     response = completion.choices[0].text
+    print(response)
     return response
