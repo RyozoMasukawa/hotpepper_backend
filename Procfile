@@ -1,1 +1,1 @@
-web: python manage.py migrate && python manage.py collectstatic && gunicorn restaurant_chatgpt.wsgi --timeout 180
+web: python manage.py migrate && python manage.py collectstatic && gunicorn restaurant_chatgpt.wsgi --timeout 600
